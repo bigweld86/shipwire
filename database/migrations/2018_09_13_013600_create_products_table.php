@@ -17,11 +17,11 @@ class CreateProductsTable extends Migration
             $table->increments('product_id');
             $table->string('product_name', 356)->nullable(false);
             $table->longText('product_description')->nullable();
-            $table->integer('product_price')->nullable(false);
-            $table->integer('product_width')->nullable();
-            $table->integer('product_length')->nullable();
-            $table->integer('product_height')->nullable();
-            $table->integer('product_weight')->nullable();
+            $table->decimal('product_price', 9, 4)->nullable(false);
+            $table->decimal('product_width', 9, 4)->nullable();
+            $table->decimal('product_length', 9, 4)->nullable();
+            $table->decimal('product_height', 9, 4)->nullable();
+            $table->decimal('product_weight', 9, 4)->nullable();
             $table->timestamps();
         });
     }
