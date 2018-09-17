@@ -1,0 +1,29 @@
+.product-list-row {
+
+    & td.action-buttons {
+
+        & a.oi.action-icon {
+
+            &:first-child {
+                margin-right: 8px;
+            }
+
+            &:last-child {
+                margin-left: 8px;
+            }
+
+            &.view-icon {
+                color: #321cad;
+            }
+
+            &.edit-icon {
+                color: #da7916;
+            }
+
+            &.remove-icon {
+                color: #ff003b;
+            }
+            
+        }
+    }
+}
