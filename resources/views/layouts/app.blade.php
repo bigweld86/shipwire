@@ -1,6 +1,9 @@
 @include('layouts.header')
 
-<div class="container app-container">
+<div class="container" id="app-container">
+	@include('layouts.errors')
+	@include('layouts.session_alerts')
+	
 	@yield('content')
 </div>
 
