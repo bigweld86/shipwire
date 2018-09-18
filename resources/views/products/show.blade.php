@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+<form method="POST" action="/orders/">
+
+{{ csrf_field() }}
+
+<input type="hidden" name="product_id" value="{{ $product->product_id }}" >
 
 <div class="form-row">
         <div class="form-group col-sm-12">
@@ -39,6 +44,9 @@
             <input type="text" class="form-control form-control-plaintext" id="product-price" name="product_price" readonly value="{{ $product->product_price }}">
         </div>
     </div>
+
+    <button type="submit" class="btn btn-primary">Add to Cart</button>
 </div>
+</form>
 
 @endsection

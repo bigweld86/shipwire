@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ action('ProductsController@index') }}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="{{ action('ProductsController@index') }}">Products</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Orders</a>
+                <a class="nav-link" href="{{ action('OrdersController@index') }}">Orders</a>
             </li>
         </ul>
     </div>
