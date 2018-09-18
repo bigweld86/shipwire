@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/products/');
 });
 
 // Product Routes
@@ -23,3 +23,8 @@ Route::get('/products/{id}/edit', 'ProductsController@edit');
 Route::post('/products/{id}', 'ProductsController@update');
 Route::get('/products/{id}', 'ProductsController@show');
 Route::get('/products/{id}/remove', 'ProductsController@destroy');
+
+// Order Routes
+Route::post('/orders/', 'OrdersController@store');
+Route::get('/orders/', 'OrdersController@index');
+Route::get('/orders/checkout', 'OrdersController@initCheckout');
