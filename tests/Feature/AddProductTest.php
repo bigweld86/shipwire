@@ -163,7 +163,7 @@ class AddProductTest extends TestCase
     /** @test */
     public function product_price_has_to_be_numeric()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         // 1. Arrange
         // make sure table is empty

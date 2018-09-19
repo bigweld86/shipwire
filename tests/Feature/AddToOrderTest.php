@@ -22,7 +22,7 @@ class AddToOrderTest extends TestCase
     /** @test */
     public function when_user_adds_one_product_to_non_existing_order_then_new_order_is_created()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $product = factory(Product::class)->create();
         
@@ -37,7 +37,7 @@ class AddToOrderTest extends TestCase
     /** @test */
     public function user_can_add_one_item_to_order()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $product = factory(Product::class)->create();
         
@@ -66,7 +66,7 @@ class AddToOrderTest extends TestCase
     /** @test */
     public function user_can_add_multiple_items_to_the_same_order()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $products = factory(Product::class, 3)->create();
         
@@ -97,7 +97,7 @@ class AddToOrderTest extends TestCase
     /** @test */
     public function when_item_is_added_more_than_once_then_qty_is_updated()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $product = factory(Product::class)->create();
         
@@ -128,7 +128,7 @@ class AddToOrderTest extends TestCase
     public function when_item_is_added_more_than_once_then_order_total_is_updated()
     {
 
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $products = factory(Product::class, 5)->create(); 
         $repeatedProduct = factory(Product::class)->create();

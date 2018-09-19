@@ -20,7 +20,7 @@ class DeleteProductTest extends TestCase
     /** @test */
     public function user_can_delete_an_existing_product()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $this->assertEquals(0, Product::count());
         $product = factory(Product::class)->create();

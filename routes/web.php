@@ -28,3 +28,4 @@ Route::get('/products/{id}/remove', 'ProductsController@destroy');
 Route::post('/orders/', 'OrdersController@store');
 Route::get('/orders/', 'OrdersController@index');
 Route::get('/orders/checkout', 'OrdersController@initCheckout');
+Route::post('/orders/checkout', 'OrdersController@completeCheckout');

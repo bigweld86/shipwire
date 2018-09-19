@@ -16,6 +16,12 @@
 @import 'pages/_products';
 @import 'pages/_orders';
 
+// body {
+//   min-height: 100vh;
+//   position: relative;
+//   margin: 0;
+// }
+
 
 .navbar-laravel {
   background-color: #fff;
@@ -27,12 +33,13 @@
 }
 
 footer {
+  //position: fixed;
+  left: 0;
+  bottom: 0;
   background-color: #583867;
   margin-top: 7rem;
   width: 100%;
   color: #fff;
-  position: fixed;
-  bottom: 0;
 
   & div.footer-content {
     padding-top: 2rem;

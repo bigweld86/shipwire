@@ -50,7 +50,7 @@ class EditProductTest extends TestCase
     /** @test */
     public function users_can_edit_an_existing_product()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $product = factory(Product::class)->create([
             'product_name' => 'Old Name',

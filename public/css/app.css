@@ -11494,6 +11494,7 @@ a.text-dark:focus {
 
 .order-item-price {
   position: absolute;
+  top: 0;
   right: 0px;
   color: #094bde;
   font-size: 20px;
@@ -11536,12 +11537,12 @@ a.text-dark:focus {
 }
 
 footer {
+  left: 0;
+  bottom: 0;
   background-color: #583867;
   margin-top: 7rem;
   width: 100%;
   color: #fff;
-  position: fixed;
-  bottom: 0;
 }
 
 footer div.footer-content {

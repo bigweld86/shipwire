@@ -13,11 +13,12 @@ class Order extends Model
     protected $fillable = [
         'order_status',
         'order_total',
-        'order_recipients_name',
-        'order_address_line1',
-        'order_address_line2',
+        'order_customer_first_name',
+        'order_customer_last_name',
+        'order_address',
         'order_city',
-        'order_zip_code'
+        'order_state',
+        'order_zip'
     ];
 
     public function orderItems() : Object
@@ -65,7 +66,7 @@ class Order extends Model
             $data['orderitem_price'] = $item['orderitem_price'];
             $data['orderitem_qty'] = $item['orderitem_qty'];
             $data['product_details'] = Product::find($item['orderitem_product_id'])->toArray();
-            // dd($data['product_details']);
+            
             $result[] = $data;
         }
         
