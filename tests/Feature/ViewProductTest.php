@@ -53,7 +53,7 @@ class ViewProductTest extends TestCase
     /** @test */
     public function user_can_view_list_of_products()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $products = factory(Product::class, 10)->create();
         
