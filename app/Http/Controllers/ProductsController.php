@@ -23,7 +23,7 @@ class ProductsController extends Controller
         // validate data
         $request->validate([
             'product_name' => 'required',
-            'product_price' => 'required|numeric|gt:0',
+            'product_price' => 'required|numeric',
             'product_width' => 'nullable|numeric',
             'product_length' => 'nullable|numeric',
             'product_height' => 'nullable|numeric',
