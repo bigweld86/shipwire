@@ -17,11 +17,12 @@ class CreateOrdersTable extends Migration
             $table->increments('order_id');
             $table->integer('order_status');
             $table->decimal('order_total', 9, 2)->nullable(true);
-            $table->string('order_recipients_name')->nullable(true);
-            $table->string('order_address_line1')->nullable(true);
-            $table->string('order_address_line2')->nullable(true);
+            $table->string('order_customer_first_name')->nullable(true);
+            $table->string('order_customer_last_name')->nullable(true);
+            $table->string('order_address')->nullable(true);
             $table->string('order_city')->nullable(true);
-            $table->string('order_zip_code')->nullable(true);
+            $table->string('order_state')->nullable(true);
+            $table->string('order_zip')->nullable(true);
             $table->timestamps();
         });
     }
